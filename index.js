@@ -243,8 +243,14 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
+function listOfNames(/*Your Code Here*/ arr) {
   /*Your Code Here*/
+  let newArr = [...arr];
+  let listOfNames = [];
+  for (let i = 0; i < newArr.length; i++) {
+    listOfNames.push(arr[i].name);
+  }
+  return listOfNames;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
